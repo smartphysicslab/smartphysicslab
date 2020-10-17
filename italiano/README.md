@@ -1,0 +1,1 @@
+Questa cartella contiene le proposte didattiche in lingua italiana
