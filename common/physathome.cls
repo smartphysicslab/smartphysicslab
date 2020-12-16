@@ -1,3 +1,4 @@
+%%% v. 1.1 - updated final note for instructors
 \NeedsTeXFormat{LaTeX2e}
 \ProvidesClass{physathome}[2020/07/02]
 
@@ -87,7 +88,7 @@
 \newcommand{\closing}{%
 \Title{Further Info Online}
 Please leave feedback, suggestions, comments, and report on your use of this resource, on the channel that corresponds to this experiment on the Slack workspace ``smartphysicslab.slack.com''.\\
-  Instructors should email \url{smartphysicslab@gmail.com}
+  Instructors should register on the platform using the form on \url{smartphysicslab.org}
 to obtain login invitation to the Slack workspace, and/or to request being added to the mailing list of smartphysicslab.
 }
 
