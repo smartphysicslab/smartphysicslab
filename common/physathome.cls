@@ -39,7 +39,7 @@
 \pagestyle{fancy}
 \lfoot{	\footnotesize
 		All smartphysicslab material is distributed under the CC-BY  license.   Template copyright \textcopyright{} 2020 by P. Cicuta \& G. Organtini \\
-		\Mundus\ \href{http://www.smartphysicslab.org}{smartphysicslab}	\quad
+		\Mundus\ \href{http://www.smartphysicslab.org}{http://www.smartphysicslab.org}	\quad
 		\Letter\ \href{mailto:smartphysicslab@gmail.com}{smartphysicslab@gmail.com  }
 	  }
 \cfoot{}
@@ -56,11 +56,13 @@
 \renewcommand{\hrulefill}{%
   \leavevmode\leaders\hrule height 1pt\hfill}
 
+\newcommand\experimentId{unassigned}
 % Define Title en News input
 \newcommand{\experiment}[1]{%
 		\begin{center}	
 			\Huge \usefont{T1}{augie}{m}{n}
-			#1%
+			#1\\%
+			\normalsize (exp. id \experimentId)
 		\end{center}	
 		\par \normalsize \normalfont}
 
