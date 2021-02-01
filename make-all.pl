@@ -21,13 +21,20 @@ foreach $dir (@dirs) {
 	print "  compiling...\n";
 	`/Library/TeX/texbin/pdflatex *.tex 1>/tmp/latex.log 2>&1`;
 	print "  ...done\n";
-	`cp *.pdf $pwd/$dir/.`;
-	print "$cmd\n";
-	`rm -f rm *.aux *.log *.out`;
+	$cmd = "cp *.pdf $pwd/$dir/.";
+	print "  $cmd\n";
+	`$cmd`;
+	$cmd = "rm -f *.aux *.log *.out";
+	print "  $cmd\n";
+	`$cmd`;
+	$cmd = "cp * $pwd/$dir/smartphysicslab/.";
+	print "  $cmd\n";
 	$CWD = "/tmp/compile";
-	`ls -1`;
-	`zip $zipfile smartphysicslab/*`;
+	$cmd = "  zip $pwd/$zipfile smartphysicslab/*";
+	print "$cmd\n";
+	`$cmd`;
 	`rm -rf /tmp/compile/smartphysicslab`;
+	print "\n";
     }
 }
 `rm -rf /tmp/compile`;
